@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Literata:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="todoCadastro" class="todo">
+    <div id="cadastro">
+        <h1 class="cabecalhoC" id="loginC">Login</h1>
+        <h1 class="cabecalhoC" id="cadastroC">Cadastro</h1>
+        <hr id="linha">
+
+        <div class="label-float">
+            <input class="input" id="usuarioC" value=" " type="text" name="name" placeholder=" " required>
+            <label>Crie um usuário</label>
+        </div>
+        <div class="label-float">
+            <input class="input" id="senhaC" value=" " type="text" placeholder=" " required>
+            <label>Crie uma senha</label>
+        </div>
+        <button id="paginaLogin">Ir para a página de login</button>
+        <button id="buttonC">Cadastrar</button>
+    </div>
+</div>
+
+<div id="todoLogin" class="todo">
+    <div id="login">
+        <h1 class="cabecalhoL" id="loginL">Login</h1>
+        <h1 class="cabecalhoL" id="cadastroL">Cadastro</h1>
+        <hr id="linha">
+
+        <div class="label-float">
+            <input class="input" id="usuarioL" value=" " type="text" name="name" placeholder=" " required>
+            <label>Informe seu Usuário</label>
+        </div>
+
+        <div class="label-float">    
+            <input class="input" id="senhaL" value=" " type="text" placeholder=" " required>
+            <label>Informe sua Senha</label>
+        </div>
+
+        <button class="buttonEnter" id="façaCadastro">Não possui login? Faça seu cadastro</button>
+        <button class="buttonEnter" id="buttonL">ENTRAR</button>
+    </div>
+    <img id="logo" class="logo" src="logo.png">
+
+</div>
+<div id="inicial">
+    <button id="sair">Sair</button>
+    <h1 id="bemVindo">BEM VINDO!</h1>
+</div>
+    <script src="web.js"></script>
+    
+</body>
+</html>

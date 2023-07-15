@@ -1,0 +1,250 @@
+
+body{
+    background-image: url(fundo.png);
+    background-size: cover;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 190vh;
+    height: 33vh;
+}
+
+.cabecalhoL{
+    font-family: 'Lemonada', cursive;
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.cabecalhoC{
+    font-family: 'Lemonada', cursive;
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.linhaTransicao{
+    transition: all 1s linear;
+}
+.linhaTransicao:hover{
+    margin-left: 150px;
+}
+
+#linha{
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}
+
+/*   TRANSIÇÃO INPUT */
+.label-float{
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input{
+    border: 1px solid #4120A9;
+    border-radius: 50em;
+    outline: none;
+    height: 35px;
+    width: 270px;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: 'Literata', serif;
+}
+
+.label-float input:focus {
+    border: solid 1px #4120A9;
+}
+
+.label-float input::placeholder{
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    transition: all 0.2s linear;
+    background-color: white;
+    border-radius: 50em;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #4120A9;
+    font-family: 'Literata', serif;
+}
+
+.label-float input:required:invalid+label{
+    color: #4120A9;
+    font-size: 13px;
+}
+
+.label-float input:focus:required:invalid {
+    border: 1px solid #4120A9;
+}
+
+.label-float input:required:invalid+label::before{
+    content: '';
+}
+
+.label-float input:focus+label, .label-floatinput:not(:placeholder-shown)+label {
+    top: 0;
+}
+/* /////////////////////////// */
+
+#loginL{
+    color: #4120A9;
+}
+
+#cadastroL{
+    margin-left: 50px;
+    color: #4020a938;
+}
+
+#cadastroC{
+    color: #4120A9;
+    margin-left: 50px;
+}
+
+#loginC{
+    
+    color: #4020a938;
+}
+
+#login{
+    width: 750px;
+    height: 430px;
+    display:inline;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0px 4px 29px -1px rgba(207, 44, 122, 0.63);
+    background-color: white;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    border-radius: 3em;
+}
+
+#logo{
+    height: 470px;
+    margin-left: -405.5px;
+    border-radius: 3em;
+}
+
+
+#cadastro{
+    width: 750px;
+    height: 430px;
+    display:inline;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0px 4px 29px -1px rgba(207, 44, 122, 0.63);
+    background-color: white;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    border-radius: 3em;
+}
+
+.buttonEnter{
+    display: block;
+}
+
+#façaCadastro{
+    border: none;
+    background-color: white;
+    font-family: 'Lemonada', cursive;
+    color: #4120A9;
+    font-size: 11px;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+#paginaLogin{
+    border: none;
+    background-color: white;
+    font-family: 'Lemonada', cursive;
+    color: #4120A9;
+    /*color: #4020a983;*/
+    font-size: 11px;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+#buttonL {
+    border-radius: 50em;
+    background-color: #4120A9;
+    color: white;
+    font-family: 'Lemonada', cursive;
+    border: solid 1px #4120A9;
+    padding: 7px;
+    width: 80px;
+    margin-top: 45px;
+    margin-left: -30px;
+}
+
+#buttonC {
+    border-radius: 50em;
+    background-color: #4120A9;
+    color: white;
+    font-family: 'Lemonada', cursive;
+    border: solid 1px #4120A9;
+    padding: 7px;
+    width: 100px;
+    margin-top: 45px;
+    margin-left: -30px;
+    display: block;
+}
+#cadastro {
+    display: none;
+    margin-top: 427px;
+}
+
+#logoCadastro{
+    display: none;
+}
+
+#inicial {
+    display:none;
+    overflow: hidden;
+}
+
+#bemVindo{
+    font-family: 'Caprasimo', cursive;
+    color: #4120A9;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 15%;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein{
+    from{
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 15%;
+    }
+}
+
+#sair{
+    border-radius: 50em;
+    background-color: #4120A9;
+    color: white;
+    font-family: 'Lemonada', cursive;
+    border: solid 1px #4120A9;
+    padding: 7px;
+    width: 100px;
+    margin-left: 90%;
+    margin-top: 1%;
+}
